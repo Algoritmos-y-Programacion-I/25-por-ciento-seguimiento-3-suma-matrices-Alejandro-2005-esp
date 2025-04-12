@@ -1,8 +1,5 @@
 package model;
 
-import model.SalaCine;
-import model.MatrizNumerica;
-
 
 public class Controller {
 
@@ -47,6 +44,13 @@ public class Controller {
 
     public MatrizNumerica getMatriz2() {
         return matriz2;
+    }
+    public void inicializarMatrices(int filas, int columnas) {
+    matriz1 = new MatrizNumerica(filas, columnas);
+    matriz2 = new MatrizNumerica(filas, columnas);
+    }
+    public MatrizNumerica sumarMatrices() {
+    return matriz1.sumar(matriz2);
     }
 
 
