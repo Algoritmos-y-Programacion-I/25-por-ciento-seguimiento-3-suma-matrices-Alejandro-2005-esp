@@ -44,7 +44,7 @@ public class Executable {
     int columnas = escaner.nextInt();
     escaner.nextLine();
 
-    cont.inicializarMatrices(filas, columnas); // <--- lo agregaremos en Controller
+    cont.inicializarMatrices(filas, columnas); 
 
     System.out.println("\nInserte los números de la matriz 1:");
     for (int i = 0; i < filas; i++) {
